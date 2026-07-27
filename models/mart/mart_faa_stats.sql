@@ -117,4 +117,4 @@ airport_stats AS (
 )
 SELECT *
 FROM airport_stats
-ORDER BY planned_flights_total DESC;
+ORDER BY planned_flights_total DESC
