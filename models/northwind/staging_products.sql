@@ -3,13 +3,14 @@ WITH source_data AS (
     FROM {{ source('northwind_data', 'products') }}
 )
 SELECT
-    productid AS product_id
-    ,productname product_name
-    ,supplierid AS supplier_id
-    ,categoryid AS category_id
---	,quantityperunit AS quantity_per_unit
-    ,unitprice::NUMERIC AS unit_price
---	,unitsinstock::INT AS units_in_stock
---	,unitsonorder::INT AS units_on_order
---	,discontinued
+    product_id,
+    product_name,
+    supplier_id,
+    category_id,
+    quantity_per_unit,
+    unit_price::NUMERIC AS unit_price,
+    units_in_stock::INTEGER AS units_in_stock,
+    units_on_order::INTEGER AS units_on_order,
+    reorder_level::INTEGER AS reorder_level,
+    discontinued
 FROM source_data
