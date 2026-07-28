@@ -4,7 +4,6 @@ WITH source_data AS (
 )
 SELECT
     customer_id,
-    product_name,
     company_name,
     contact_name,
     contact_title,
