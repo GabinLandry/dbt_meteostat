@@ -1,11 +1,11 @@
 version: 2
-    sources:
+sources:
     
-    - name: northwind_data
-      schema: northwind
-      tables:
-        - name: orders
-        - name: order_details
-        - name: products
-        - name: categories
-        - name: customers
+  - name: northwind_data
+    schema: northwind
+    tables:
+      - name: orders
+      - name: order_details
+      - name: products
+      - name: categories
+      - name: customers
