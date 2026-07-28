@@ -8,3 +8,4 @@ version: 2
         - name: order_details
         - name: products
         - name: categories
+        - name: customers
